@@ -1,0 +1,15 @@
+artifacts
+prediction_service
+notebooks
+__pycache__
+mlruns
+*.egg-info
+.idea
+.ipynb_checkpoints
+.pytest_cache
+*.ipynb
+*.png
+*.db
+*.pickle
+*.pkl
+*.log

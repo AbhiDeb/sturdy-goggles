@@ -1,0 +1,14 @@
+Feature,Priviliged,UnPriviliged,% Priviliged class,SPD
+area code,415,408,85.74,-0.00299
+area code,415,510,85.74,-0.00621
+international plan,0,1,88.5,-0.3092
+voice mail plan,1,0,91.32,-0.08038
+customer service calls,3,1,89.74,-0.00074
+customer service calls,3,2,89.74,-0.01206
+customer service calls,3,0,89.74,-0.02943
+customer service calls,3,4,89.74,-0.35527
+customer service calls,3,8,89.74,-0.39744
+customer service calls,3,7,89.74,-0.45299
+customer service calls,3,5,89.74,-0.5035
+customer service calls,3,6,89.74,-0.5338
+customer service calls,3,9,89.74,-0.89744
