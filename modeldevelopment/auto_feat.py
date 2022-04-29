@@ -114,15 +114,6 @@ class MakeDataSet:
 
 #             with open('categorical_names.pickle', 'wb') as handle:
 #                 pickle.dump(categorical_names, handle, protocol=pickle.HIGHEST_PROTOCOL)
-            
-            # # converting the dataframe  into aif360 standard format
-            # logging.info("Creating a list of categorical columns without the priviledged attribute added")
-
-            # temp_list = self.cat_columns.copy()
-            # self.cat_columns.remove(settings.PRIVILEGED_ATTRIBUTE)
-            # cat_columns_wo_privileged_attr = self.cat_columns
-            # self.cat_columns = temp_list.copy()
-            # del temp_list
 
 
             logging.info("Converting Pandas dataframe to AIF360 dataframe format...")
@@ -133,8 +124,7 @@ class MakeDataSet:
                                            protected_attribute_names=[settings.PRIVILEGED_ATTRIBUTE],
                                            privileged_classes=[self.privileged_attr],)
                                         #    categorical_features = cat_columns_wo_privileged_attr)  # Commenting this out to avoid creating one hot encoded features
-            # print("2")
-            # print(dataset_orig)
+
             return dataset_orig
 
         except Exception as e:
