@@ -78,8 +78,8 @@ if __name__ == '__main__':
         dict1 = {}
         for col in X_train.columns:
             dict1[col] = col
-        xpl = SmartExplainer(features_dict=dict1,label_dict=response_dict)
-        xpl.compile(x=X_train, model = loaded_model)
+        xpl = SmartExplainer(model = loaded_model, features_dict=dict1,label_dict=response_dict)
+        xpl.compile(x=X_train)
         app = xpl.run_app(title_story='Telecom Churn Model - XAI')
         pass
     except Exception as e:
