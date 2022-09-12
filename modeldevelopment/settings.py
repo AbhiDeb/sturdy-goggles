@@ -32,7 +32,7 @@ HYPER_PARAMS = \
         'LogisticRegression':
             [
                 {
-                    'C': [10 ** i for i in range(-5, 10)]
+                    'C': [10 ** i for i in range(-5, 5)]
                 }
             ],
         "RandomForestClassifier":
